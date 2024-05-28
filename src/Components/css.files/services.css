@@ -1,0 +1,56 @@
+.services-container {
+    padding: 20px;
+    background: #f0f0f0;
+    text-align: center;
+}
+
+.services-title {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #ff4d4d;
+}
+
+.services-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 250px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    transform: perspective(1000px) rotateY(0deg);
+    animation: rotateIn 1s ease-out forwards;
+}
+
+.service-card:hover {
+    transform: rotateY(10deg);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+}
+
+.service-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.service-description {
+    font-size: 1em;
+    color: #666;
+}
+
+@keyframes rotateIn {
+    from {
+        transform: perspective(1000px) rotateY(-90deg);
+        opacity: 0;
+    }
+    to {
+        transform: perspective(1000px) rotateY(0deg);
+        opacity: 1;
+    }
+}
