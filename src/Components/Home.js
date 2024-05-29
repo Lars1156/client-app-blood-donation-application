@@ -1,6 +1,7 @@
 import React from 'react';
 import './css.files/home.css';
 
+
 const Home = () => {
     return (
         <div className="home-container">
