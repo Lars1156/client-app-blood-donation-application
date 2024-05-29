@@ -7,18 +7,19 @@ import Home from './Components/Home';
 import Services from './Components/Services';
 import AboutUs from './Components/AboutUs';
 import ContactUs from './Components/ContactUs';
-
+import LoginPage from  './Components/LoginPage';
 function App() {
   return (
     <div className="App">
        <Router>
         <Navigation/>
-        {/* <Hnavigation/> */}
+  
           <Routes>
             <Route path='/' element={<Home/>}/>
             <Route path='/services' element={<Services/>}/>
             <Route path='/about' element={<AboutUs/>}/>
             <Route path='/contact' element={<ContactUs/>}/>
+            <Route path ='/LoginPage'element={<LoginPage/>}/>
           </Routes>
        </Router>
     </div>
