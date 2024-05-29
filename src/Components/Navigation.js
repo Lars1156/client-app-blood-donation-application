@@ -4,9 +4,7 @@ import './css.files/Navbar.css';
 function Navigation(){
     return (
         <div className="vertical-nav bg-dark">
-            <div className="login-button-container">
-                <button className="login-button">Login</button>
-            </div>
+           
             <ul className="nav flex-column">
                 <li className="nav-item">
                     <Link className='nav-link'to="/">Home</Link>

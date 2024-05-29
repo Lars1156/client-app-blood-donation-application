@@ -1,0 +1,65 @@
+.admin-login-container {
+    padding: 40px;
+    background: #f0f0f0;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    margin: 50px auto;
+    transform: perspective(1000px) rotateY(0deg);
+    animation: rotateIn 1s ease-out forwards;
+}
+
+.admin-login-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #ff4d4d;
+}
+
+.admin-login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.admin-login-input {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.admin-login-input:focus {
+    border-color: #ff4d4d;
+    box-shadow: 0 0 8px rgba(255, 77, 77, 0.5);
+}
+
+.admin-login-button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    box-shadow: 0 5px #d40000;
+}
+
+.admin-login-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px #d40000;
+}
+
+@keyframes rotateIn {
+    from {
+        transform: perspective(1000px) rotateY(-90deg);
+        opacity: 0;
+    }
+    to {
+        transform: perspective(1000px) rotateY(0deg);
+        opacity: 1;
+    }
+}

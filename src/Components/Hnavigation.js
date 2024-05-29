@@ -9,3 +9,4 @@ function Hnavigation(){
         </div>
     )
 }
+export default Hnavigation;
