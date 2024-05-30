@@ -1,5 +1,6 @@
 import React from 'react';
 import './css.files/home.css';
+import { Link } from 'react-router-dom';
 const Home = () => {
     return (
         <div className="home-container">
@@ -8,7 +9,8 @@ const Home = () => {
                 <p className="hero-description">
                     Your blood donation can give a precious gift to someone in need. Join us and make a difference.
                 </p>
-                 <button className="donate-button" >Become a Donor</button>
+                 {/* <button className="donate-button" >Become a Donor</button> */}
+               <Link to="/donarRegistration" className='donate-button'>Become a Donor</Link>
             </div>
             <div className="info-section">
                 <div className="info-card">

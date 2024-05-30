@@ -10,13 +10,13 @@ function Navigation(){
                     <Link className='nav-link'to="/">Home</Link>
                 </li>
                 <li className="nav-item">
-                <Link className='nav-link'to="/services">Services</Link>
+                   <Link className='nav-link'to="/services">Services</Link>
                 </li>
                 <li className="nav-item">
-                <Link className='nav-link'to="/about">About</Link>
+                   <Link className='nav-link'to="/about">About</Link>
                 </li>
                 <li className="nav-item">
-                <Link className='nav-link'to="/contact">Contact</Link>
+                   <Link className='nav-link'to="/contact">Contact</Link>
                 </li>
                 <li className="nav-item">
                     <Link className='nav-link'to ='/LoginPage'>Admin-Login</Link>
