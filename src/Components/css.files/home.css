@@ -39,6 +39,7 @@
     cursor: pointer;
     transition: transform 0.3s;
     box-shadow: 0 5px #d40000;
+    text-decoration: none;
 }
 
 .donate-button:hover {
